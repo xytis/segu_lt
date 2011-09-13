@@ -1,0 +1,42 @@
+wrapper
+{
+  border: n;
+}
+
+/* Menu looks */
+menu ul
+{
+  list-style-type: none;
+}
+
+menu li
+{
+  text-shadow: 1px 1px 0px #ffe3a1;
+}
+
+menu title
+{
+  text-shadow: 1px 1px 0px #ffe3a1;
+}
+
+/* Foot looks */
+foot {
+  box-shadow: inset 0 -3px 6px rgba(255,255,255,0.6);
+}
+
+/* Middle looks */
+middle {
+}
+
+/* Wrapper looks */
+wrapper {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.6);
+  
+}
+
+/* Bubble looks */
+bubble
+{
+  box-shadow: inset 3px 3px 6px rgba(0,0,0,0.6);
+}
+

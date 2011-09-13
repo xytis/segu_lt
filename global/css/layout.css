@@ -1,0 +1,79 @@
+wrapper, top, middle, bottom, menu, submenu, title, foot, bubble
+{
+  display: block;
+}
+
+middle
+{
+  position:relative;
+  overflow-x:auto;
+  
+}
+
+/*Center the page, give it a width, and a border.*/
+wrapper
+{
+  position: relative;
+  width: 60em ;
+  margin-left: auto ;
+  margin-right: auto ;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+}
+
+/*Set height for the header part.*/
+top
+{
+  position:relative;
+  height: 8em ;
+  margin-top: 0;
+  padding: 1em 1em 1em 1em;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+}
+
+/* Middle */
+
+
+/*Menu part*/
+menu
+{
+  width: 100%;
+  padding:0;
+  margin:0;
+}
+
+menu li
+{
+  float: left;
+  display: inline;
+  padding: 0 1em;
+}
+
+/*Footer in general*/
+bottom
+{
+  position:relative;
+}
+
+foot
+{
+  width: 100%;
+  padding: 1em 0 1em 0;
+  margin: 0;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+}
+
+/* Pretty part */
+bubble
+{
+  position: absolute;
+  z-index: 10;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+}

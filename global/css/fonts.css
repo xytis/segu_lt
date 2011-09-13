@@ -1,0 +1,15 @@
+menu a
+{
+  color: #333333;
+  font-family: 'Helvetica', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+menu title
+{
+  color: #333333;
+  font-family: 'Helvetica', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}

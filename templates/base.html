@@ -1,0 +1,49 @@
+{% load cms_tags sekizai_tags menu_tags %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}Segu.lt{% endblock %}</title>
+    <link rel="SHORTCUT ICON" href="{{ STATIC_URL }}images/favicon.ico">
+    {% addtoblock "css" %}
+    <link href="{{ STATIC_URL }}css/layout.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}css/colors.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="{{ STATIC_URL }}css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    {% endaddtoblock %}
+    {% addtoblock "js" %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.6.3.min.js"></script>
+    {% endaddtoblock %}
+    {% render_block "css" %}
+</head>
+<body>
+  <wrapper>
+  <top>
+    <menu>
+      {% show_menu %}
+    </menu>
+    {% block head%}{% endblock %}
+  </top>
+  <middle>
+    {% placeholder base_content %}
+    {% block base_content%}{% endblock %}
+  </middle>
+  <bottom>
+    {% addtoblock "js" %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/menu.js"></script>
+  {% endaddtoblock %}
+
+    <bubble style="width: 38px; height: 38px; top:5px; right: 10px;">
+    </bubble>
+    <bubble style="width: 22px; height: 22px; top:35px; right: 45px;">
+    </bubble>
+    <bubble style="width: 10px; height: 10px; top:60px; right: 25px;">
+    </bubble>
+    <foot>
+      {% block footer %}{% endblock %}
+    </foot>
+  </bottom>
+  </wrapper>
+   {% render_block "js" %}
+</body>
+</html>
