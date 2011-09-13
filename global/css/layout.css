@@ -1,4 +1,4 @@
-wrapper, top, middle, bottom, menu, submenu, title, foot, bubble
+wrapper, top, middle, bottom, menu, submenu, title, foot, bubble, logo, shout, breadcrumb
 {
   display: block;
 }
@@ -34,22 +34,60 @@ top
   border-top-right-radius: 15px 15px;
 }
 
-/* Middle */
+logo
+{
+  position:absolute;
+  width: 160px;
+  height: 160px;
+  z-index: 200;
+  border-radius: 50% 50%;
+}
 
+shout
+{
+
+}
+
+/* Middle */
+middle
+{
+  min-height:3em;
+}
 
 /*Menu part*/
 menu
 {
-  width: 100%;
-  padding:0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3px 0 0 9px;
   margin:0;
+  border-top-left-radius: 25px 25px;
 }
 
 menu li
 {
   float: left;
   display: inline;
-  padding: 0 1em;
+  padding: 0.2em 1em 0.2em 1em;
+  margin: 0 1px;
+}
+
+breadcrumb
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin:0;
+  border-bottom-left-radius: 25px 25px;
+}
+
+breadcrumb li
+{
+  float: left;
+  display: inline;
+  padding: 0.2em 1em 0.2em 1em;
+  margin: 0 1px;
 }
 
 /*Footer in general*/
@@ -72,8 +110,5 @@ bubble
 {
   position: absolute;
   z-index: 10;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
+  border-radius: 50% 50%;
 }

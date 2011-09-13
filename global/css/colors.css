@@ -25,5 +25,20 @@ foot
 
 bubble
 {
-   background-color: #CCC;
+  background-color: #eee;
+}
+
+menu
+{
+  background-color: #000;
+}
+
+breadcrumb
+{
+  background-color: #ccc;
+}
+
+menu li, logo, shout
+{
+  background-color: #0F0;
 }
