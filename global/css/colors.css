@@ -3,6 +3,11 @@ body
   background-image: url("/static/images/back_loop.png");
 }
 
+logo
+{
+  background-image: url("/static/images/static_logo.png") 0 0 no-repeat;;
+}
+
 wrapper
 {
 
@@ -38,7 +43,7 @@ breadcrumb
   background-color: #ccc;
 }
 
-menu li, logo, shout
+menu li, shout
 {
   background-color: #0F0;
 }
