@@ -1,15 +1,22 @@
-menu a
+menu li, menu a
 {
-  color: #333333;
-  font-family: 'Helvetica', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-  font-weight: bold;
+  color: inherit;
+  
   text-decoration: none;
 }
 
-menu title
+menu li
 {
   color: #333333;
+  font-size: large;
+  font-weight: normal;
   font-family: 'Helvetica', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+menu li:hover, menu li.selected
+{
+  color: #333333;
+  font-size: large;
   font-weight: bold;
-  font-size: 1.1em;
+  font-family: 'Helvetica', 'Lucida Grande', Verdana, Arial, Sans-Serif;
 }

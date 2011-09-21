@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block logo %}
+{% endblock %}
+
+{% block content %}
+  <content>
+  {% placeholder page_content %}
+  </content>
+{% endblock %}
+
+{% block sidebar %}
+  <side>
+  {% placeholder sidebar_content %}
+  </side>
+{% endblock %}
+
+{% block footer %}
+  <p> Footer </p>
+{% endblock %}

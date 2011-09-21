@@ -5,13 +5,18 @@ body
 
 logo
 {
-  background-image: url("/static/images/static_logo.png") 0 0 no-repeat;
+  background: url("/static/images/static_logo.png") 0 0 no-repeat;
 }
 
 wrapper
 {
 
 } 
+
+right
+{
+  background-color: #fff;
+}
 
 middle
 {
@@ -20,12 +25,13 @@ middle
 
 top
 {
-  background-color: #CCC;
+  background-color: #fff;
 }
 
 foot
 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff931e), to(#ff931e)); /* for webkit browsers */
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#ff931e), to(#ff931e)); /* for webkit browsers */
+  background-color: #fff;
 }
 
 bubble
@@ -33,9 +39,8 @@ bubble
   background-color: #eee;
 }
 
-menu
-{
-  background-color: #000;
+menu li:hover, menu li.selected {
+  border-bottom: solid 2px #ff931e;
 }
 
 breadcrumb
@@ -43,7 +48,7 @@ breadcrumb
   background-color: #ccc;
 }
 
-menu li, shout
+shout
 {
   background-color: #0F0;
 }

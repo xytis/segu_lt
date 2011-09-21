@@ -1,4 +1,4 @@
-wrapper, top, middle, bottom, menu, submenu, title, foot, bubble, logo, shout, breadcrumb
+wrapper, side, top, right, left, middle, content, bottom, menu, submenu, title, foot, bubble, logo, shout, breadcrumb
 {
   display: block;
 }
@@ -7,44 +7,66 @@ middle
 {
   position:relative;
   overflow-x:auto;
-  
+}
+
+left
+{
+  padding-right: 200px;
+}
+right
+{
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  border-top-right-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
 }
 
 /*Center the page, give it a width, and a border.*/
 wrapper
 {
   position: relative;
-  width: 60em ;
+  width: 50em ;
   margin-left: auto ;
   margin-right: auto ;
-  border-top-left-radius: 15px 15px;
+  border-top-left-radius: 100px 100px;
   border-top-right-radius: 15px 15px;
   border-bottom-left-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
 }
 
+content
+{
+  overflow: auto;
+  margin-left: 2em;
+  margin-right: 2em;  
+}
+
+
 /*Set height for the header part.*/
 top
 {
   position:relative;
-  height: 8em ;
+  height: 100px;
   margin-top: 0;
-  padding: 1em 1em 1em 1em;
-  border-top-left-radius: 15px 15px;
+  border-top-left-radius: 100px 100px;
   border-top-right-radius: 15px 15px;
 }
 
 logo
 {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 0px;
+  top: 0px;
   float: left;
   width: 200px;
   height: 200px;
   margin-left: 0px;
   margin-top: 0px;
-  z-index: 10;
+  z-index: 15;
 }
 
 shout
@@ -55,7 +77,13 @@ shout
 /* Middle */
 middle
 {
+  padding-top: 100px;
   min-height:3em;
+}
+
+side
+{
+  width: 200px;
 }
 
 /*Menu part*/
@@ -63,18 +91,20 @@ menu
 {
   position: absolute;
   bottom: 0;
-  right: 0;
-  padding: 3px 0 0 9px;
-  margin:0;
-  border-top-left-radius: 25px 25px;
+  left: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 menu li
 {
   float: left;
   display: inline;
-  padding: 0.2em 1em 0.2em 1em;
-  margin: 0 1px;
+}
+
+menu a
+{
+  padding: 0.2em 0.8em 0.2em 0.8em;
 }
 
 breadcrumb
@@ -83,6 +113,7 @@ breadcrumb
   top: 0;
   right: 0;
   margin:0;
+  left: 225px;
   border-bottom-left-radius: 25px 25px;
 }
 
@@ -102,8 +133,7 @@ bottom
 
 foot
 {
-  width: 100%;
-  padding: 1em 0 1em 0;
+  padding: 1em 1em 1em 1em;
   margin: 0;
   border-bottom-left-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
@@ -111,6 +141,13 @@ foot
 
 /* Pretty part */
 bubble
+{
+  position: absolute;
+  z-index: 10;
+  border-radius: 50% 50%;
+}
+
+pin
 {
   position: absolute;
   z-index: 10;
